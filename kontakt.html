@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Stýblová</title>
+    <link rel="stylesheet" href="css/styly.css">
+    <link rel="stylesheet" href="css/query.css">
+</head>
+<body>
+    <!-- ******* Navigation ****** -->
+    <header>
+        <div class="nav-background"></div>
+            <nav class="flex-column">
+                <ul>
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a href="omne.html">O mně</a></li>
+                    <li><a href="sluzby.html">Služby</a></li>
+                    <li><a href="reference.html">Reference</a></li>
+                    <li><a href="cenik.html">Ceník</a></li>
+                    <li class="aktivni"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+
+       
+    <div class="container">
+            <div class="empty-space-others"></div>
+          <div class="heading-main">
+              <h2>Kontakt</h2>
+          </div>
+            <!-- ****** Kontakt ******* -->
+            <section class="contacts">
+                <div class="contacts-info">
+                    <h3>Anna Stýblová</h3> 
+                    <p>andulka.styblova@gmail.com</p>
+                    <p>+420 607 697 110</p>
+                    <p><a href="" target="_blank">Facebook</a></p> <!-- DOPSAT -->
+                    <p><a href="" target="_blank">Instagram</a></p> <!-- DOPSAT -->
+                </div>
+
+
+            <!-- ******* Formulář ****** -->
+            <div class="contacts-info">
+               <form action="mailer.php" method="post" class="box">
+
+
+                    <!-- *Odeslání formuláře success x error* -->
+                    <!-- <?php
+                        if($_GET['success'] == 1){
+                            echo "<div class=\"form-result success\">Odeslání proběhlo úspěšně.</div>";
+                        }
+
+                        if($_GET['success'] == -1){
+                            echo "<div class=\"form-result error\">Chyba při odeslání. Zkuste znovu.</div>";
+                        }
+                    ?> -->
+
+                    <h3 class="form-nadpis">Napište mi:</h3>
+                    <input type="text" name="name" placeholder="Jméno a příjmení">
+                    <input type="email" name="email" placeholder="Email">
+                    <textarea name="message" cols="30" rows="10" placeholder="Zpráva"></textarea>
+                    <input type="submit" value="Odeslat">
+               </form>
+
+               <div class="form-gdpr">Kliknutím na tlačítko "Odeslat" vyjadřujete souhlas se <a href="gdpr.html">zpracováním vašich osobních údajů.</a></div>
+            </div>
+        </section>
+<!-- NAKONEC CELÝ "KONTAKT.HTML" PŘEPSAT NA "KONTAKT.PHP"!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- V "MAILER.PHP" DOPLNIT SPRÁVNOU DOMÉNU A EMAIL !!!!!!!!!!!!!!!!!!!!!!!! -->
+       
+    </div>
+
+    <footer >
+        <p>Copyright &copy; 2022 | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

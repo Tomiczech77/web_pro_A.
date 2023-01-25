@@ -1,0 +1,353 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/***** reusable *****/
+.container {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+.heading-main h2 {
+    text-align: center;
+    /* margin-top: 20px; */
+    font-size: 40px;
+}
+
+.heading-main h2:after {
+    content: "";
+    display: block;
+    width: 150px;
+    border: 2px solid #91875e;
+    margin: 20px auto;
+}
+
+.empty-space-index {
+    height: 50px;
+}
+
+.empty-space-others {
+    height: 100px;
+}
+
+
+/***** Navigation *****/
+.flex-column {
+    display: flex;
+    flex-direction: column; /* Sloupec */
+    justify-content: center; /* Hlavní osa */
+    align-items: center; /* Vedlejší osa */
+}
+
+.nav-background {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(87, 83, 83, 0.7);
+    position: fixed;
+    z-index: 50;
+    border-bottom: 2px solid #fff; 
+}
+
+nav ul {
+    margin-top: 70px;
+    position: fixed;
+    z-index: 50;
+}
+
+nav ul li {
+    display: inline-block;
+    color: #fff;
+    margin: 0 15px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    letter-spacing: 2px;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    transition: border-bottom 0.5s;
+    border-bottom: 2px solid #fff;
+}
+
+.aktivni {
+    border-bottom: 5px solid #fff;
+}
+
+/* Mobile navigation */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 5px;
+    display: none;
+    
+}
+
+/***** INDEX Cover photo and text *****/
+.header-text {
+    width: 100%;
+    height: 70vh;
+    background: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column; /*Sloupec*/
+    justify-content: center; /* Hlavní osa */
+    align-items: center; /* Vedlejší osa */
+    z-index: 50;
+    }
+
+.header-text h1 {
+    color: #fff;
+    font-size: 60px;
+    text-shadow: 5px 5px 8px black;
+    letter-spacing: 5px;
+    margin: 0 5px;
+}
+
+.header-text p {
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+
+/***** INDEX *****/
+main p {
+    font-size: 20px;
+}
+
+.uvod-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+/***** OMNE *****/
+main p {
+    font-size: 20px;
+}
+
+.omne-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+/***** SLUZBY *****/
+main p {
+    font-size: 20px;
+}
+
+.sluzby-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+/***** REFERENCE *****/
+main p {
+    font-size: 20px;
+}
+
+.reference-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+/***** CENIK *****/
+
+
+/***** KONTAKT *****/
+.contacts {
+    display: flex;
+    flex-direction: row;  
+}
+
+.contacts-info {
+    color: #000;
+    padding: 15px 15px 15px 30px;
+    margin: 10px;
+    box-shadow: 5px 5px 20px black;
+    text-align: justify;
+    border-radius: 20px;
+    width: 50%;
+}
+
+.contacts-info h3 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+/* Kontakt */
+.contacts-info p {
+    font-size: 25px;
+}
+
+.contacts-info p a {
+    text-decoration: none;
+}
+
+.contacts-info p a:hover {
+    border-bottom: 4px solid rgb(87, 83, 83);
+}
+
+/* Formular */
+.box {
+    width: 300px;
+    /* padding: 40px; */
+}
+
+.form-nadpis {
+    margin-bottom: 29px;
+}
+
+textarea {
+    width: 400px;
+}
+
+.box input[type="text"],
+.box input[type="email"],
+textarea {
+    border: 0;
+    background: none;
+    border: 2px solid #91875e;
+    margin: 5px;
+    padding: 10px 10px;
+    color:#000;
+    border-radius: 15px;
+    font-size: 15px;
+    outline: none;
+    border-color: #807f7c;
+    font-family: sans-serif;
+}
+
+.box input[type="text"]:focus,
+.box input[type="email"]:focus,
+textarea:focus {
+    border-color: rgb(0, 0, 0);
+}
+
+.box input[type="submit"]
+{
+    margin-left: 5px;
+    border: 2px solid #807f7c;
+    background: none;
+    text-align: center;
+    padding: 12px 30px;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.box input[type="submit"]:hover {
+    transition: 0.5s;
+    background: rgb(87, 83, 83);
+    color: white;
+}
+
+/* Form result */
+.form-result {
+    width: 80%;
+    padding: 10px;
+    margin: 40px 0;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.success {
+    background-color: rgb(32, 104, 15);
+}
+
+.error {
+    background-color: rgb(143, 26, 26);
+}
+
+/* Form GDPR */
+.form-gdpr {
+    font-size: 20px;
+    margin: 30px 77px 30px 9px;
+}
+
+.form-gdpr a {
+    text-decoration: none;
+}
+
+.form-gdpr a:hover {
+    border-bottom: 3px solid rgb(87, 83, 83);
+}
+
+/***** GDPR *****/
+.zasady-gdpr{
+    margin: 15px
+
+}
+
+.zasady-gdpr h3 {
+    color: rgb(65, 63, 63);
+    font-size: 30px;
+    margin-top: 70px;
+}
+
+.zasady-gdpr ol li {
+    padding: 0 0 15px 40px;
+    color: rgb(101, 101, 101);
+    font-size: 25px;    
+}
+
+.zasady-gdpr ul li {
+    padding: 0 0 15px 40px;
+    color: rgb(101, 101, 101);
+    font-size: 25px;
+}
+
+.zasady-gdpr p {
+    font-size: 23px;
+    margin: 45px 0;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** Footer *****/
+footer {
+    background: rgb(87, 83, 83);
+    height: 50px;
+    /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 100% 100%, 0 100%, 0% 50%); */
+    margin-top: 50px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+}
+
+    
